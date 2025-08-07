@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const categories = [
+  {key: "national_sars", label:"National SARS"},
+  {key: "national_trade", label:"National Trade"},
+  {key: "national_census", label:"National Census"},
   { key: "prov_naics", label: "Provincial NAICS" },
   { key: "prov_nocs", label: "Provincial NOCS" },
   { key: "city_naics", label: "City NAICS" },
@@ -11,248 +14,291 @@ const categories = [
 
 const plotsData = {
   // ... your existing plot data (same as you provided) ...
+  national_sars: [
+    {
+      name: "FTE Distribution",
+      description:
+        "NAICS complexity and density for Alberta (Provincial level).",
+      file: "national_sars/Municipalities by FTE Distribution.png",
+    },
+  ],
   prov_naics: [
     {
       name: "Alberta",
-      description: "NAICS complexity and density for Alberta (Provincial level).",
-      file: "prov_naics/Alberta.html"
+      description:
+        "NAICS complexity and density for Alberta (Provincial level).",
+      file: "prov_naics/Alberta.html",
     },
     {
       name: "British Columbia",
-      description: "NAICS complexity and density for British Columbia (Provincial level).",
-      file: "prov_naics/British_Columbia.html"
+      description:
+        "NAICS complexity and density for British Columbia (Provincial level).",
+      file: "prov_naics/British_Columbia.html",
     },
     {
       name: "Manitoba",
-      description: "NAICS complexity and density for Manitoba (Provincial level).",
-      file: "prov_naics/Manitoba.html"
+      description:
+        "NAICS complexity and density for Manitoba (Provincial level).",
+      file: "prov_naics/Manitoba.html",
     },
     {
       name: "New Brunswick",
-      description: "NAICS complexity and density for New Brunswick (Provincial level).",
-      file: "prov_naics/New_Brunswick.html"
+      description:
+        "NAICS complexity and density for New Brunswick (Provincial level).",
+      file: "prov_naics/New_Brunswick.html",
     },
     {
       name: "Newfoundland and Labrador",
-      description: "NAICS complexity and density for Newfoundland and Labrador (Provincial level).",
-      file: "prov_naics/Newfoundland_and_Labrador.html"
+      description:
+        "NAICS complexity and density for Newfoundland and Labrador (Provincial level).",
+      file: "prov_naics/Newfoundland_and_Labrador.html",
     },
     {
       name: "Northwest Territories",
-      description: "NAICS complexity and density for Northwest Territories (Provincial level).",
-      file: "prov_naics/Northwest_Territories.html"
+      description:
+        "NAICS complexity and density for Northwest Territories (Provincial level).",
+      file: "prov_naics/Northwest_Territories.html",
     },
     {
       name: "Nova Scotia",
-      description: "NAICS complexity and density for Nova Scotia (Provincial level).",
-      file: "prov_naics/Nova_Scotia.html"
+      description:
+        "NAICS complexity and density for Nova Scotia (Provincial level).",
+      file: "prov_naics/Nova_Scotia.html",
     },
     {
       name: "Nunavut",
-      description: "NAICS complexity and density for Nunavut (Provincial level).",
-      file: "prov_naics/Nunavut.html"
+      description:
+        "NAICS complexity and density for Nunavut (Provincial level).",
+      file: "prov_naics/Nunavut.html",
     },
     {
       name: "Ontario",
-      description: "NAICS complexity and density for Ontario (Provincial level).",
-      file: "prov_naics/Ontario.html"
+      description:
+        "NAICS complexity and density for Ontario (Provincial level).",
+      file: "prov_naics/Ontario.html",
     },
     {
       name: "Prince Edward Island",
-      description: "NAICS complexity and density for Prince Edward Island (Provincial level).",
-      file: "prov_naics/Prince_Edward_Island.html"
+      description:
+        "NAICS complexity and density for Prince Edward Island (Provincial level).",
+      file: "prov_naics/Prince_Edward_Island.html",
     },
     {
       name: "Quebec",
-      description: "NAICS complexity and density for Quebec (Provincial level).",
-      file: "prov_naics/Quebec.html"
+      description:
+        "NAICS complexity and density for Quebec (Provincial level).",
+      file: "prov_naics/Quebec.html",
     },
     {
       name: "Saskatchewan",
-      description: "NAICS complexity and density for Saskatchewan (Provincial level).",
-      file: "prov_naics/Saskatchewan.html"
+      description:
+        "NAICS complexity and density for Saskatchewan (Provincial level).",
+      file: "prov_naics/Saskatchewan.html",
     },
     {
       name: "Yukon",
       description: "NAICS complexity and density for Yukon (Provincial level).",
-      file: "prov_naics/Yukon.html"
-    }
+      file: "prov_naics/Yukon.html",
+    },
   ],
   prov_nocs: [
     {
       name: "Alberta",
-      description: "NOCS complexity and density for Alberta (Provincial level).",
-      file: "prov_nocs/Alberta.html"
+      description:
+        "NOCS complexity and density for Alberta (Provincial level).",
+      file: "prov_nocs/Alberta.html",
     },
     {
       name: "British Columbia",
-      description: "NOCS complexity and density for British Columbia (Provincial level).",
-      file: "prov_nocs/British_Columbia.html"
+      description:
+        "NOCS complexity and density for British Columbia (Provincial level).",
+      file: "prov_nocs/British_Columbia.html",
     },
     {
       name: "Manitoba",
-      description: "NOCS complexity and density for Manitoba (Provincial level).",
-      file: "prov_nocs/Manitoba.html"
+      description:
+        "NOCS complexity and density for Manitoba (Provincial level).",
+      file: "prov_nocs/Manitoba.html",
     },
     {
       name: "New Brunswick",
-      description: "NOCS complexity and density for New Brunswick (Provincial level).",
-      file: "prov_nocs/New_Brunswick.html"
+      description:
+        "NOCS complexity and density for New Brunswick (Provincial level).",
+      file: "prov_nocs/New_Brunswick.html",
     },
     {
       name: "Newfoundland and Labrador",
-      description: "NOCS complexity and density for Newfoundland and Labrador (Provincial level).",
-      file: "prov_nocs/Newfoundland_and_Labrador.html"
+      description:
+        "NOCS complexity and density for Newfoundland and Labrador (Provincial level).",
+      file: "prov_nocs/Newfoundland_and_Labrador.html",
     },
     {
       name: "Northwest Territories",
-      description: "NOCS complexity and density for Northwest Territories (Provincial level).",
-      file: "prov_nocs/Northwest_Territories.html"
+      description:
+        "NOCS complexity and density for Northwest Territories (Provincial level).",
+      file: "prov_nocs/Northwest_Territories.html",
     },
     {
       name: "Nova Scotia",
-      description: "NOCS complexity and density for Nova Scotia (Provincial level).",
-      file: "prov_nocs/Nova_Scotia.html"
+      description:
+        "NOCS complexity and density for Nova Scotia (Provincial level).",
+      file: "prov_nocs/Nova_Scotia.html",
     },
     {
       name: "Nunavut",
-      description: "NOCS complexity and density for Nunavut (Provincial level).",
-      file: "prov_nocs/Nunavut.html"
+      description:
+        "NOCS complexity and density for Nunavut (Provincial level).",
+      file: "prov_nocs/Nunavut.html",
     },
     {
       name: "Ontario",
-      description: "NOCS complexity and density for Ontario (Provincial level).",
-      file: "prov_nocs/Ontario.html"
+      description:
+        "NOCS complexity and density for Ontario (Provincial level).",
+      file: "prov_nocs/Ontario.html",
     },
     {
       name: "Prince Edward Island",
-      description: "NOCS complexity and density for Prince Edward Island (Provincial level).",
-      file: "prov_nocs/Prince_Edward_Island.html"
+      description:
+        "NOCS complexity and density for Prince Edward Island (Provincial level).",
+      file: "prov_nocs/Prince_Edward_Island.html",
     },
     {
       name: "Quebec",
       description: "NOCS complexity and density for Quebec (Provincial level).",
-      file: "prov_nocs/Quebec.html"
+      file: "prov_nocs/Quebec.html",
     },
     {
       name: "Saskatchewan",
-      description: "NOCS complexity and density for Saskatchewan (Provincial level).",
-      file: "prov_nocs/Saskatchewan.html"
+      description:
+        "NOCS complexity and density for Saskatchewan (Provincial level).",
+      file: "prov_nocs/Saskatchewan.html",
     },
     {
       name: "Yukon",
       description: "NOCS complexity and density for Yukon (Provincial level).",
-      file: "prov_nocs/Yukon.html"
-    }
+      file: "prov_nocs/Yukon.html",
+    },
   ],
   city_naics: [
     {
       name: "Central Okanagan",
-      description: "NAICS complexity and density for Central Okanagan (City level).",
-      file: "city_naics/Central_Okanagan.html"
+      description:
+        "NAICS complexity and density for Central Okanagan (City level).",
+      file: "city_naics/Central_Okanagan.html",
     },
     {
       name: "Central Okanagan West",
-      description: "NAICS complexity and density for Central Okanagan West (City level).",
-      file: "city_naics/Central_Okanagan_West.html"
+      description:
+        "NAICS complexity and density for Central Okanagan West (City level).",
+      file: "city_naics/Central_Okanagan_West.html",
     },
     {
       name: "Duck Lake 7",
       description: "NAICS complexity and density for Duck Lake 7 (City level).",
-      file: "city_naics/Duck_Lake_7.html"
+      file: "city_naics/Duck_Lake_7.html",
     },
     {
       name: "Kelowna (City)",
       description: "NAICS complexity and density for Kelowna (City level).",
-      file: "city_naics/Kelowna_(City).html"
+      file: "city_naics/Kelowna_(City).html",
     },
     {
       name: "Lake Country",
-      description: "NAICS complexity and density for Lake Country (City level).",
-      file: "city_naics/Lake_Country.html"
+      description:
+        "NAICS complexity and density for Lake Country (City level).",
+      file: "city_naics/Lake_Country.html",
     },
     {
       name: "Peachland",
       description: "NAICS complexity and density for Peachland (City level).",
-      file: "city_naics/Peachland.html"
+      file: "city_naics/Peachland.html",
     },
     {
       name: "Tsinstikeptum 9",
-      description: "NAICS complexity and density for Tsinstikeptum 9 (City level).",
-      file: "city_naics/Tsinstikeptum_9.html"
+      description:
+        "NAICS complexity and density for Tsinstikeptum 9 (City level).",
+      file: "city_naics/Tsinstikeptum_9.html",
     },
     {
       name: "Tsinstikeptum 10",
-      description: "NAICS complexity and density for Tsinstikeptum 10 (City level).",
-      file: "city_naics/Tsinstikeptum_10.html"
+      description:
+        "NAICS complexity and density for Tsinstikeptum 10 (City level).",
+      file: "city_naics/Tsinstikeptum_10.html",
     },
     {
       name: "Vernon",
       description: "NAICS complexity and density for Vernon (City level).",
-      file: "city_naics/Vernon.html"
+      file: "city_naics/Vernon.html",
     },
-    
+
     {
       name: "West Kelowna",
-      description: "NAICS complexity and density for West Kelowna (City level).",
-      file: "city_naics/West_Kelowna.html"
-    }
+      description:
+        "NAICS complexity and density for West Kelowna (City level).",
+      file: "city_naics/West_Kelowna.html",
+    },
   ],
   city_nocs: [
     {
       name: "Cranbrook (CA), B.C.",
-      description: "NOCS complexity and density for Cranbrook (City level, BC).",
-      file: "city_nocs/Cranbrook_(CA),_B.C..html"
+      description:
+        "NOCS complexity and density for Cranbrook (City level, BC).",
+      file: "city_nocs/Cranbrook_(CA),_B.C..html",
     },
     {
       name: "Kamloops (CMA), B.C.",
       description: "NOCS complexity and density for Kamloops (City level, BC).",
-      file: "city_nocs/Kamloops_(CMA),_B.C..html"
+      file: "city_nocs/Kamloops_(CMA),_B.C..html",
     },
     {
       name: "Kelowna",
       description: "NOCS complexity and density for Kelowna (City level, BC).",
-      file: "city_nocs/Kelowna.html"
+      file: "city_nocs/Kelowna.html",
     },
     {
       name: "Kelowna (CMA), B.C.",
-      description: "NOCS complexity and density for Kelowna (CMA, City level, BC).",
-      file: "city_nocs/Kelowna_(CMA),_B.C..html"
+      description:
+        "NOCS complexity and density for Kelowna (CMA, City level, BC).",
+      file: "city_nocs/Kelowna_(CMA),_B.C..html",
     },
     {
       name: "Nelson (CA), B.C.",
       description: "NOCS complexity and density for Nelson (City level, BC).",
-      file: "city_nocs/Nelson_(CA),_B.C..html"
+      file: "city_nocs/Nelson_(CA),_B.C..html",
     },
     {
       name: "Penticton",
-      description: "NOCS complexity and density for Penticton (City level, BC).",
-      file: "city_nocs/Penticton.html"
+      description:
+        "NOCS complexity and density for Penticton (City level, BC).",
+      file: "city_nocs/Penticton.html",
     },
     {
       name: "Penticton (CA), B.C.",
-      description: "NOCS complexity and density for Penticton (CA, City level, BC).",
-      file: "city_nocs/Penticton_(CA),_B.C..html"
+      description:
+        "NOCS complexity and density for Penticton (CA, City level, BC).",
+      file: "city_nocs/Penticton_(CA),_B.C..html",
     },
     {
       name: "Salmon Arm",
-      description: "NOCS complexity and density for Salmon Arm (City level, BC).",
-      file: "city_nocs/Salmon_Arm.html"
+      description:
+        "NOCS complexity and density for Salmon Arm (City level, BC).",
+      file: "city_nocs/Salmon_Arm.html",
     },
     {
       name: "Salmon Arm (CA), B.C.",
-      description: "NOCS complexity and density for Salmon Arm (CA, City level, BC).",
-      file: "city_nocs/Salmon_Arm_(CA),_B.C..html"
+      description:
+        "NOCS complexity and density for Salmon Arm (CA, City level, BC).",
+      file: "city_nocs/Salmon_Arm_(CA),_B.C..html",
     },
     {
       name: "Trail (CA), B.C.",
       description: "NOCS complexity and density for Trail (City level, BC).",
-      file: "city_nocs/Trail_(CA),_B.C..html"
+      file: "city_nocs/Trail_(CA),_B.C..html",
     },
     {
       name: "Vernon",
       description: "NOCS complexity and density for Vernon (City level, BC).",
-      file: "city_nocs/Vernon.html"
+      file: "city_nocs/Vernon.html",
     },
     // {
     //   name: "Vernon (CA), B.C.",
@@ -263,56 +309,60 @@ const plotsData = {
   city_naics_employment: [
     {
       name: "Central Okanagan",
-      description: "Employment counts by NAICS for Central Okanagan (City level).",
-      file: "city_naics_employment/Central_Okanagan.html"
+      description:
+        "Employment counts by NAICS for Central Okanagan (City level).",
+      file: "city_naics_employment/Central_Okanagan.html",
     },
     {
       name: "Central Okanagan West",
-      description: "Employment counts by NAICS for Central Okanagan West (City level).",
-      file: "city_naics_employment/Central_Okanagan_West.html"
+      description:
+        "Employment counts by NAICS for Central Okanagan West (City level).",
+      file: "city_naics_employment/Central_Okanagan_West.html",
     },
     {
       name: "Duck Lake 7",
       description: "Employment counts by NAICS for Duck Lake 7 (City level).",
-      file: "city_naics_employment/Duck_Lake_7.html"
+      file: "city_naics_employment/Duck_Lake_7.html",
     },
     {
       name: "Kelowna (City)",
       description: "Employment counts by NAICS for Kelowna (City level).",
-      file: "city_naics_employment/Kelowna_(City).html"
+      file: "city_naics_employment/Kelowna_(City).html",
     },
     {
       name: "Lake Country",
       description: "Employment counts by NAICS for Lake Country (City level).",
-      file: "city_naics_employment/Lake_Country.html"
+      file: "city_naics_employment/Lake_Country.html",
     },
     {
       name: "Peachland",
       description: "Employment counts by NAICS for Peachland (City level).",
-      file: "city_naics_employment/Peachland.html"
+      file: "city_naics_employment/Peachland.html",
     },
     {
       name: "Tsinstikeptum 9",
-      description: "Employment counts by NAICS for Tsinstikeptum 9 (City level).",
-      file: "city_naics_employment/Tsinstikeptum_9.html"
+      description:
+        "Employment counts by NAICS for Tsinstikeptum 9 (City level).",
+      file: "city_naics_employment/Tsinstikeptum_9.html",
     },
     {
       name: "Tsinstikeptum 10",
-      description: "Employment counts by NAICS for Tsinstikeptum 10 (City level).",
-      file: "city_naics_employment/Tsinstikeptum_10.html"
+      description:
+        "Employment counts by NAICS for Tsinstikeptum 10 (City level).",
+      file: "city_naics_employment/Tsinstikeptum_10.html",
     },
     {
       name: "Vernon",
       description: "Employment counts by NAICS for Vernon (City level).",
-      file: "city_naics_employment/Vernon.html"
+      file: "city_naics_employment/Vernon.html",
     },
-    
+
     {
       name: "West Kelowna",
       description: "Employment counts by NAICS for West Kelowna (City level).",
-      file: "city_naics_employment/West_Kelowna.html"
-    }
-  ]
+      file: "city_naics_employment/West_Kelowna.html",
+    },
+  ],
 };
 
 function Results() {
