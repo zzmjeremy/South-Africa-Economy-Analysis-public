@@ -1,11 +1,20 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { plotsData } from "./Results";
 
 function PlotViewer() {
-  const location = useLocation();
+  const { name } = useParams();
+  const decodedName = decodeURIComponent(decodeURIComponent(name));
   const navigate = useNavigate();
 
-  // Remove the "/view/" prefix to get the actual path to the HTML file
-  const plotfile = location.pathname.replace(/^\/view\//, "");
+  const plot = Object.values(plotsData)
+    .flat()
+    .find((p) => p.name === decodedName);
+
+  if (!plot) {
+    return <p style={{ padding: "2rem" }}>Plot not found.</p>;
+  }
+
+  const files = plot.files || [plot.file];
 
   return (
     <div style={{ padding: "2rem" }}>
@@ -18,43 +27,42 @@ function PlotViewer() {
           border: "none",
           borderRadius: "0.5rem",
           padding: "0.5rem 1.5rem",
-          cursor: "pointer"
+          cursor: "pointer",
         }}
       >
         ← Back to Results
       </button>
-      <div
-        style={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "center"
-        }}
-      >
-        <iframe
-          src={`/plots/${plotfile}`}
-          title={plotfile}
-          width="1120"
-          height="640"
-          style={{
-            border: "1px solid #ccc",
-            borderRadius: "1rem",
-            transform: "scale(0.8)",
-            transformOrigin: "top left",
-            width: "1400px",
-            height: "800px"
-          }}
-        />
-      </div>
-      <div style={{ marginTop: "1rem", textAlign: "center" }}>
-        <a
-          href={`/plots/${plotfile}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "#0055aa", textDecoration: "underline" }}
-        >
-          Open full screen in new tab
-        </a>
-      </div>
+
+      <h2 style={{ fontSize: "1.8rem", marginBottom: "1rem" }}>{plot.name}</h2>
+      <p style={{ color: "#444", marginBottom: "2rem" }}>{plot.description}</p>
+
+      {files.map((file, idx) =>
+        file.endsWith(".html") ? (
+          <iframe
+            key={idx}
+            src={`/plots/${file}`}
+            title={`plot-${idx}`}
+            width="100%"
+            height="700"
+            style={{
+              border: "1px solid #ccc",
+              borderRadius: "1rem",
+              marginBottom: "2rem",
+            }}
+          />
+        ) : (
+          <img
+            key={idx}
+            src={`/plots/${file}`}
+            alt={`plot-${idx}`}
+            style={{
+              width: "100%",
+              borderRadius: "1rem",
+              marginBottom: "2rem",
+            }}
+          />
+        )
+      )}
     </div>
   );
 }

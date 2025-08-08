@@ -12,10 +12,10 @@ function App() {
     <BrowserRouter>
       <div
         className="app-container"
-        style={{ 
-          display: "flex", 
-          flexDirection: "column", 
-          minHeight: "100vh" 
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
         }}
       >
         <Navbar />
@@ -25,7 +25,7 @@ function App() {
             <Route path="/results" element={<Results />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/view/*" element={<PlotViewer />} />
+            <Route path="/view/:name" element={<PlotViewer />} />
           </Routes>
         </main>
         <Footer />
