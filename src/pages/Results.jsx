@@ -5,7 +5,8 @@ const categories = [
   { key: "national_sars", label: "National SARS" },
   { key: "national_trade", label: "National Trade" },
   { key: "eth_sars", label: "eThekwini SARS" },
-  { key: "prov_naics", label: "Provincial NAICS" },
+  { key: "eth_hex7", label: "eThekwini Hexbins" },
+  { key: "eth_change", label: "eThekwini Growth" },
 ];
 
 export const plotsData = {
@@ -94,93 +95,66 @@ export const plotsData = {
   ],
   eth_sars: [
     {
-      name: "Complexity vs. Density",
-      description:
-        "NAICS complexity and density for Alberta (Provincial level).",
+      name: "Complexity vs. d",
+      description: "NAICS complexity and density .",
       files: [
-        "national_trade/twoDigit_Product_Counts.png",
-        "national_trade/twoDigit_Product_Proportion.png",
-        "national_trade/Product_Counts.png",
+        "eth_sars/FTE_ETH_PCI_vs_Density_interactive.html",
+        "eth_sars/FTE_ETH_PCI_vs_Scaled_Hidalgo_Density_interactive.html",
+      ],
+    },
+    {
+      name: "FTE Distributio",
+      description: "NAICS complexity and density .",
+      files: [
+        "eth_sars/FTE_Change.png",
+        "eth_sars/FTE_Hex7.png",
+        "eth_sars/FTE_Industries.png",
       ],
     },
   ],
-  prov_naics: [
+  eth_hex7: [
     {
-      name: "Alberta",
-      description:
-        "NAICS complexity and density for Alberta (Provincial level).",
-      file: "prov_naics/Alberta.html",
+      name: "ECI Hexbin Map",
+      description: "NAICS complexity and density .",
+      files: [
+        "eth_hex7/Hex_EThekwini_ECI_byValue_All.html",
+        "eth_hex7/Hex_EThekwini_ECI_byPercentage_All.html",
+      ],
     },
     {
-      name: "British Columbia",
-      description:
-        "NAICS complexity and density for British Columbia (Provincial level).",
-      file: "prov_naics/British_Columbia.html",
+      name: "Income Hexbin Map",
+      description: "NAICS complexity and density .",
+      files: [
+        "eth_hex7/Hex_EThekwini_MedianIncome_byValue.html",
+        "eth_hex7/Hex_EThekwini_MedianIncome_byPercentage.html",
+      ],
     },
     {
-      name: "Manitoba",
-      description:
-        "NAICS complexity and density for Manitoba (Provincial level).",
-      file: "prov_naics/Manitoba.html",
+      name: "Gini Hexbin Map",
+      description: "NAICS complexity and density .",
+      files: [
+        "eth_hex7/Hex_EThekwini_Gini_byValue.html",
+        "eth_hex7/Hex_EThekwini_Gini_byPercentage.html",
+      ],
     },
     {
-      name: "New Brunswick",
-      description:
-        "NAICS complexity and density for New Brunswick (Provincial level).",
-      file: "prov_naics/New_Brunswick.html",
+      name: "Combined Hexbin Map",
+      description: "NAICS complexity and density .",
+      file: "eth_hex7/Hex_EThekwini_Combined.png",
     },
+  ],
+  eth_change: [
     {
-      name: "Newfoundland and Labrador",
-      description:
-        "NAICS complexity and density for Newfoundland and Labrador (Provincial level).",
-      file: "prov_naics/Newfoundland_and_Labrador.html",
-    },
-    {
-      name: "Northwest Territories",
-      description:
-        "NAICS complexity and density for Northwest Territories (Provincial level).",
-      file: "prov_naics/Northwest_Territories.html",
-    },
-    {
-      name: "Nova Scotia",
-      description:
-        "NAICS complexity and density for Nova Scotia (Provincial level).",
-      file: "prov_naics/Nova_Scotia.html",
-    },
-    {
-      name: "Nunavut",
-      description:
-        "NAICS complexity and density for Nunavut (Provincial level).",
-      file: "prov_naics/Nunavut.html",
-    },
-    {
-      name: "Ontario",
-      description:
-        "NAICS complexity and density for Ontario (Provincial level).",
-      file: "prov_naics/Ontario.html",
-    },
-    {
-      name: "Prince Edward Island",
-      description:
-        "NAICS complexity and density for Prince Edward Island (Provincial level).",
-      file: "prov_naics/Prince_Edward_Island.html",
-    },
-    {
-      name: "Quebec",
-      description:
-        "NAICS complexity and density for Quebec (Provincial level).",
-      file: "prov_naics/Quebec.html",
-    },
-    {
-      name: "Saskatchewan",
-      description:
-        "NAICS complexity and density for Saskatchewan (Provincial level).",
-      file: "prov_naics/Saskatchewan.html",
-    },
-    {
-      name: "Yukon",
-      description: "NAICS complexity and density for Yukon (Provincial level).",
-      file: "prov_naics/Yukon.html",
+      name: "Change With Year Growth",
+      description: "NAICS complexity and density .",
+      files: [
+        "eth_change/GrowthVS-density.html",
+        "eth_change/GrowthVS-zDensity.html",
+        "eth_change/Employment_growth_vs._PCI.html",
+        "eth_change/Employment growth_vs._ECI.html",
+        "eth_change/Income_per_FTE_vs_ECI_2024.html",
+        "eth_change/Correlation_vs._ECI.png",
+      ],
     },
   ],
 };
