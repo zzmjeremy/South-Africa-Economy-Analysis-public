@@ -1,0 +1,137 @@
+{
+  "national": [
+    {
+      "name": "FTE Distribution",
+      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "files": [
+        "National/FTE_Distribution/FTE_Change.png",
+        "National/FTE_Distribution/Municipalities_by_FTE_Distribution.png",
+        "National/FTE_Distribution/FTE_Boxplot_Municipalities.png",
+        "National/FTE_Distribution/Industries_by_FTE_Distribution.png",
+        "National/FTE_Distribution/FTE_Boxplot_Industries.png",
+        "National/FTE_Distribution/FTE_Municipalities.png",
+        "National/FTE_Distribution/FTE_Industries.png"
+      ]
+    },
+    {
+      "name": "Industry Complexity & Income Distribution",
+      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "files": [
+        "National/Complexity_Income_Distribution/PCI_Industry.png",
+        "National/Complexity_Income_Distribution/Income_Industry.png"
+      ]
+    },
+    {
+      "name": "Industry Change Over Time",
+      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "files": [
+        "National/Industry_Change/NationalFTE_Change.html",
+        "National/Industry_Change/NationalFTE_Change_Percent.html",
+        "National/Industry_Change/Muni_HighECI_FTE_Change.html",
+        "National/Industry_Change/Muni_HighECI_FTE_Change_Percent.html",
+        "National/Industry_Change/Muni_MidECI_FTE_Change.html",
+        "National/Industry_Change/Muni_MidECI_FTE_Change_Percent.html",
+        "National/Industry_Change/Muni_LowECI_FTE_Change.html",
+        "National/Industry_Change/Muni_LowECI_FTE_Change_Percent.html"
+      ]
+    },
+    {
+      "name": "Complexity vs. Density",
+      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "files": [
+        "National/Complexity_vs._Density/PCI_vs_Unnormalized_Density_interactive.html",
+        "National/Complexity_vs._Density/PCI_vs_SH_WD_interactive.html",
+        "National/Complexity_vs._Density/FTE_High_ECI_PCI_vs_Density_interactive.html",
+        "National/Complexity_vs._Density/FTE_Mid_ECI_PCI_vs_Density_interactive.html",
+        "National/Complexity_vs._Density/FTE_Low_ECI_PCI_vs_Density_interactive.html",
+        "National/Complexity_vs._Density/FTE_High_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.html",
+        "National/Complexity_vs._Density/FTE_Mid_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.html",
+        "National/Complexity_vs._Density/FTE_Low_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.html"
+      ]
+    },
+    {
+      "name": "S Curve",
+      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "files": [
+        "National/S_Curve/ECI_vs_Correlation.png",
+        "National/S_Curve/S_Curve_Cities_11years.png",
+        "National/S_Curve/S_Curve_Provinces_11years_Province.png"
+      ]
+    },
+    {
+      "name": "ECI Distribution",
+      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "file": "National/ECI_Distribution/Muni_ECI_Distribution.png"
+    },
+    {
+      "name": "Products Distribution",
+      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "files": [
+        "National/Products_Distribution/twoDigit_Product_Counts.png",
+        "National/Products_Distribution/twoDigit_Product_Proportion.png",
+        "National/Products_Distribution/Product_Counts.png"
+      ]
+    }
+  ],
+  "eth": [
+    {
+      "name": "Complexity vs. d",
+      "description": "NAICS complexity and density .",
+      "files": [
+        "eThekwini/Complexity_vs._Density/FTE_ETH_PCI_vs_Density_interactive.html",
+        "eThekwini/Complexity_vs._Density/FTE_ETH_PCI_vs_Scaled_Hidalgo_Density_interactive.html"
+      ]
+    },
+    {
+      "name": "FTE Distributio",
+      "description": "NAICS complexity and density .",
+      "files": [
+        "eThekwini/FTE_Distribution/FTE_Change.png",
+        "eThekwini/FTE_Distribution/FTE_Hex7.png",
+        "eThekwini/FTE_Distribution/ECI_Distribution.png",
+        "eThekwini/FTE_Distribution/FTE_Industries.png"
+      ]
+    },
+    {
+      "name": "ECI Hexbin Map",
+      "description": "NAICS complexity and density .",
+      "files": [
+        "eThekwini/Hexbin_Map/ECI/Hex_EThekwini_ECI_byValue_All.html",
+        "eThekwini/Hexbin_Map/ECI/Hex_EThekwini_ECI_byPercentage_All.html"
+      ]
+    },
+    {
+      "name": "Income Hexbin Map",
+      "description": "NAICS complexity and density .",
+      "files": [
+        "eThekwini/Hexbin_Map/Income/Hex_EThekwini_MedianIncome_byValue.html",
+        "eThekwini/Hexbin_Map/Income/Hex_EThekwini_MedianIncome_byPercentage.html"
+      ]
+    },
+    {
+      "name": "Gini Hexbin Map",
+      "description": "NAICS complexity and density .",
+      "files": [
+        "eThekwini/Hexbin_Map/Gini/Hex_EThekwini_Gini_byValue.html",
+        "eThekwini/Hexbin_Map/Gini/Hex_EThekwini_Gini_byPercentage.html"
+      ]
+    },
+    {
+      "name": "Combined Hexbin Map",
+      "description": "NAICS complexity and density .",
+      "file": "eThekwini/Hexbin_Map/Hex_EThekwini_Combined.png"
+    },
+    {
+      "name": "Change With Year Growth",
+      "description": "NAICS complexity and density .",
+      "files": [
+        "eThekwini/Change_Year/GrowthVS-density.html",
+        "eThekwini/Change_Year/GrowthVS-zDensity.html",
+        "eThekwini/Change_Year/Employment_growth_vs._PCI.html",
+        "eThekwini/Change_Year/Employment growth_vs._ECI.html",
+        "eThekwini/Change_Year/Income_per_FTE_vs_ECI_2024.html",
+        "eThekwini/Change_Year/Correlation_vs._ECI.png"
+      ]
+    }
+  ]
+}

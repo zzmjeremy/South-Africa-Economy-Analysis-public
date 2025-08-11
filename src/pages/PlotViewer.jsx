@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { plotsData } from "./Results";
+import raw from "../data/plotsRaw.json"; 
 import "./PlotViewer.css";
 
 function PlotViewer() {
@@ -7,15 +7,25 @@ function PlotViewer() {
   const decodedName = decodeURIComponent(decodeURIComponent(name));
   const navigate = useNavigate();
 
-  const plot = Object.values(plotsData)
-    .flat()
-    .find((p) => p.name === decodedName);
+  const allPlots = [...(raw.national || []), ...(raw.eth || [])];
+  const plot = allPlots.find((p) => p.name === decodedName);
 
   if (!plot) {
-    return <p className="pv-not-found">Plot not found.</p>;
+    return (
+      <div className="pv-wrap">
+        <button className="pv-back" onClick={() => navigate(-1)}>
+          ← Back
+        </button>
+        <p className="pv-not-found">Plot not found.</p>
+      </div>
+    );
   }
 
-  const files = plot.files || [plot.file];
+  const files = Array.isArray(plot.files)
+    ? plot.files
+    : plot.file
+    ? [plot.file]
+    : [];
 
   return (
     <div className="pv-wrap">
@@ -27,7 +37,7 @@ function PlotViewer() {
       <p className="pv-desc">{plot.description}</p>
 
       {files.map((file, idx) =>
-        file.endsWith(".html") ? (
+        /\.html?$/i.test(file) ? (
           <div className="pv-frame" key={idx}>
             <iframe
               src={`/plots/${file}`}

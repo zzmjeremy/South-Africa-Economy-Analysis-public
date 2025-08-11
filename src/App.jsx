@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Results from "./pages/Results";
+// import Results from "./pages/Results"
+import Gallery from "./components/Gallery";
 import PlotViewer from "./pages/PlotViewer";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -22,7 +23,8 @@ function App() {
         <main style={{ flex: "1 0 auto" }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/results" element={<Results />} />
+            {/* <Route path="/results" element={<Results />} /> */}
+            <Route path="/results" element={<Gallery />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/view/:name" element={<PlotViewer />} />

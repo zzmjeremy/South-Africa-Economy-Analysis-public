@@ -1,0 +1,33 @@
+.gal-wrap { max-width:1160px; margin:0 auto; padding:1rem 1rem 3rem; }
+.gal-tabs { display:flex; gap:12px; margin:0 0 1.2rem; }
+.gal-tab { background:#f3f7ff; border:1px solid #cfe0ff; color:#1151b8; border-radius:999px; padding:6px 14px; cursor:pointer; }
+.gal-tab.active { background:#1151b8; color:#fff; border-color:#1151b8; }
+
+.gal-groups { display:grid; grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); gap:18px; }
+
+.gcard { position:relative; background:#fff; border:1px solid #e8eefb; border-radius:14px; box-shadow:0 2px 10px rgb(0 0 0 / 6%); overflow:visible; }
+.gcard-main { display:grid; grid-template-columns:120px 1fr; gap:16px; padding:16px; }
+.gcard-concept { width:100%; height:88px; object-fit:cover; border-radius:10px; background:#eef4ff; }
+.gcard-title { margin:0; font-size:1.05rem; font-weight:700; color:#1c3350; }
+.gcard-desc { margin:6px 0 10px; color:#4b5565; font-size:.95rem; }
+.gcard-tags .gc-tag { display:inline-block; background:#eff6ff; color:#215bb3; border:1px solid #d6e6ff; border-radius:8px; padding:2px 8px; margin-right:6px; font-size:12px; }
+
+.gcard:hover .gc-previews { opacity:1; transform:translateX(0); pointer-events:auto; }
+.gc-previews{
+  position:absolute; top:14px; right:-8px; transform:translateX(18px);
+  opacity:0; pointer-events:none; transition:all .25s ease; z-index:30;
+  width:380px; height:220px; display:grid; grid-template-columns:repeat(6, 1fr); grid-auto-rows:96px; gap:10px;
+}
+
+.pv-card{ position:relative; border:1px solid #e5ecff; background:#fff; border-radius:10px;
+  box-shadow:0 2px 8px rgb(16 24 40 / 8%); overflow:hidden; cursor:pointer; padding:0; }
+.pv-card img{ width:100%; height:100%; object-fit:cover; }
+.pv-type{ position:absolute; left:6px; bottom:6px; background:rgba(17,81,184,.85); color:#fff;
+  border-radius:6px; font-size:11px; padding:2px 6px; }
+
+.pv-0{ grid-column:1 / span 3; grid-row:1; transform:rotate(-1.5deg); }
+.pv-1{ grid-column:4 / span 3; grid-row:1; transform:rotate(1.2deg); }
+.pv-2{ grid-column:2 / span 2; grid-row:2; transform:translateY(-6px) rotate(-0.6deg); }
+.pv-3{ grid-column:4 / span 2; grid-row:2; transform:translateY(8px) rotate(.9deg); }
+.pv-4{ grid-column:3 / span 2; grid-row:3; transform:rotate(-1deg); opacity:.95; }
+.pv-5{ grid-column:5 / span 2; grid-row:3; transform:translateY(-4px) rotate(.6deg); }
