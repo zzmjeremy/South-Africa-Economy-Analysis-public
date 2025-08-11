@@ -1,0 +1,52 @@
+.home-container {
+  min-height: 100vh;
+  padding: 3rem 0 1rem 0; /* reduced bottom padding from 3rem to 1rem */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.home-content {
+  max-width: 720px;
+  margin: 0 1rem;
+  padding: 32px 40px 0 40px; /* removed bottom padding, set to 0 */
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(60, 80, 150, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  color: #21374a;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.home-content h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-content p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.home-content h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.home-content ul {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.home-content p:last-of-type {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.home-content a {
+  color: #1151b8;
+  text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+.contact-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0.2rem 40px 1rem 40px; /* same padding as About page */
+  border-radius: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #21374A;
+  line-height: 1.6;
+  min-height: calc(100vh - 160px); /* keep footer position consistent */
+}
+
+.contact-container h1 {
+  font-weight: 900;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  gap: 6rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 1.1rem;
+  color: #21374A;
+}
+
+.contact-info div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: #1151b8;
+  text-decoration: underline;
+  margin-top: 0.3rem;
+}

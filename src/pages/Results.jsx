@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Results.css";
 
 const categories = [
   { key: "national_sars", label: "National SARS" },
@@ -168,21 +169,9 @@ function Results() {
   );
 
   return (
-    <div
-      style={{
-        maxWidth: "1160px",
-        margin: "0 auto",
-        padding: "0 1rem 3rem 1rem",
-        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        color: "#223a4e",
-      }}
-    >
-      <h1
-        style={{ fontWeight: 700, fontSize: "2.8rem", marginBottom: "0.2rem" }}
-      >
-        Results
-      </h1>
-      <p style={{ fontSize: "1.1rem", marginBottom: "1.8rem", color: "#555" }}>
+    <div className="results-container">
+      <h1 className="results-title">Results</h1>
+      <p className="results-description">
         Explore interactive plots by category. Click a plot name to open the
         full interactive visualization in a viewer page (with custom scaling).
       </p>
@@ -192,25 +181,10 @@ function Results() {
         placeholder="Search regions..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-        style={{
-          padding: "0.5rem 1rem",
-          marginBottom: "1.5rem",
-          borderRadius: "8px",
-          border: "1px solid #ccc",
-          width: "100%",
-          maxWidth: "400px",
-          fontSize: "1rem",
-        }}
+        className="results-search"
       />
 
-      <div
-        style={{
-          display: "flex",
-          gap: "2.5rem",
-          marginBottom: "2rem",
-          flexWrap: "wrap",
-        }}
-      >
+      <div className="results-tabs">
         {categories.map((cat) => (
           <button
             key={cat.key}
@@ -218,65 +192,28 @@ function Results() {
               setActiveTab(cat.key);
               setSearchQuery("");
             }}
-            style={{
-              cursor: "pointer",
-              background: "none",
-              border: "none",
-              fontSize: "1.05rem",
-              fontWeight: activeTab === cat.key ? 700 : 400,
-              color: activeTab === cat.key ? "#1151b8" : "#445566",
-              borderBottom:
-                activeTab === cat.key
-                  ? "3px solid #1151b8"
-                  : "3px solid transparent",
-              paddingBottom: "4px",
-              transition: "color 0.3s, border-bottom-color 0.3s",
-            }}
+            className={`results-tab-btn ${
+              activeTab === cat.key ? "active" : ""
+            }`}
           >
             {cat.label}
           </button>
         ))}
       </div>
 
-      <ul style={{ listStyle: "none", paddingLeft: 0 }}>
+      <ul className="results-list">
         {filteredPlots?.length === 0 && (
-          <li style={{ color: "#888", fontStyle: "italic" }}>
-            No plots found for "{searchQuery}".
-          </li>
+          <li className="results-empty">No plots found for "{searchQuery}".</li>
         )}
         {filteredPlots?.map((plot) => (
-          <li
-            key={plot.name}
-            style={{
-              backgroundColor: "#f9fbff",
-              borderRadius: "12px",
-              padding: "1rem 1.2rem",
-              marginBottom: "1.25rem",
-              boxShadow: "0 1px 4px rgb(0 0 0 / 0.1)",
-              transition: "box-shadow 0.3s",
-            }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.boxShadow = "0 4px 12px rgb(0 0 0 / 0.15)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.boxShadow = "0 1px 4px rgb(0 0 0 / 0.1)")
-            }
-          >
+          <li key={plot.name} className="results-item">
             <Link
               to={`/view/${encodeURIComponent(encodeURIComponent(plot.name))}`}
-              style={{
-                fontSize: "1.15rem",
-                fontWeight: 600,
-                color: "#1151b8",
-                textDecoration: "underline",
-                cursor: "pointer",
-              }}
+              className="results-item-link"
             >
               {plot.name}
             </Link>
-            <p style={{ marginTop: "0.3rem", color: "#4a5364" }}>
-              {plot.description}
-            </p>
+            <p className="results-item-desc">{plot.description}</p>
           </li>
         ))}
       </ul>

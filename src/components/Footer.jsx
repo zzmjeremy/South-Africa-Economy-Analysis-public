@@ -1,26 +1,20 @@
 import React from "react";
+import "./Footer.css";
 
 function Footer() {
   return (
-    <footer style={{
-      backgroundColor: "#223a4e",
-      color: "#f0f0f0",
-      padding: "2rem 1rem",
-      // marginTop: "3rem", // remove this
-      fontSize: "0.9rem",
-      textAlign: "center"
-    }}>
-      <div style={{ maxWidth: "1160px", margin: "0 auto" }}>
-        <div style={{ marginBottom: "1rem" }}>
+    <footer className="footer">
+      <div className="footer-inner">
+        <div className="footer-title">
           <strong>RIX</strong> — Regional Industry Explorer
         </div>
-        <nav style={{ marginBottom: "1rem" }}>
-          <a href="#" style={{ color: "#f0f0f0", margin: "0 1rem", textDecoration: "none" }}>Privacy Policy</a>
-          <a href="#" style={{ color: "#f0f0f0", margin: "0 1rem", textDecoration: "none" }}>Terms of Service</a>
-          <a href="#" style={{ color: "#f0f0f0", margin: "0 1rem", textDecoration: "none" }}>Contact</a>
-          <a href="#" style={{ color: "#f0f0f0", margin: "0 1rem", textDecoration: "none" }}>Help</a>
+        <nav className="footer-nav">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact</a>
+          <a href="#">Help</a>
         </nav>
-        <div>
+        <div className="footer-copy">
           &copy; {new Date().getFullYear()} RIX. All rights reserved.
         </div>
       </div>

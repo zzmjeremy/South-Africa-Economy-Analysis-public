@@ -19,6 +19,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.app-container {
+  /* background-image: url('./assets/eThekwini_1.jpg'); */
+  background-size: cover;      
+  background-position: center; 
+  background-attachment: fixed; 
+}
+
 body {
   margin: 0;
   display: flex;

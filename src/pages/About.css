@@ -1,0 +1,32 @@
+.about-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0.2rem 40px 1rem 40px;
+  border-radius: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #21374A;
+  line-height: 1.6;
+  min-height: calc(100vh - 160px);
+}
+
+.about-container h1 {
+  font-weight: 900;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-container h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-container ul {
+  color: #445;
+}
+
+.about-container a {
+  color: #1151b8;
+  text-decoration: underline;
+}
