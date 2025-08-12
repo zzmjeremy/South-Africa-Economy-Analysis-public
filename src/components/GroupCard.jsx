@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useRef, useState } from "react";
 import { computePlacements } from "../utils/layout.js";
 import PreviewCard from "./PreviewCard.jsx";
 import { LAYOUT_OVERRIDES } from "../config/layoutOverrides.js";
@@ -6,11 +6,27 @@ import { LAYOUT_OVERRIDES } from "../config/layoutOverrides.js";
 export default function GroupCard({ group }) {
   const key = group.id;
   const ovr = LAYOUT_OVERRIDES[key] || {};
-  const mergedLayout = { ...(group.layout || {}), ...ovr };
+  const [side, setSide] = useState("right");
+
+  const decideSide = (panelW = 640, gap = 12) => {
+    const card = cardRef.current;
+    if (!card) return;
+    const rect = card.getBoundingClientRect();
+    const vw = window.innerWidth || document.documentElement.clientWidth;
+    const fitsRight = rect.right + gap + panelW <= vw;
+    const fitsLeft = rect.left - gap - panelW >= 0;
+    setSide(fitsRight ? "right" : fitsLeft ? "left" : "right");
+  };
+
+  const cardRef = useRef(null);
+
+  const mergedLayout = useMemo(() => {
+    return { ...(group.layout || {}), ...ovr, side };
+  }, [group.layout, ovr, side]);
 
   const placements = useMemo(
-    () => computePlacements(group.previews, mergedLayout, key),
-    [group, key]
+    () => computePlacements(group.previews, mergedLayout, `${key}-${side}`),
+    [group, mergedLayout, key, side]
   );
 
   const idx =
@@ -25,7 +41,12 @@ export default function GroupCard({ group }) {
   const conceptSrc = first ? first.thumb || `/plots/${first.file}` : "";
 
   return (
-    <div className="gcard">
+    <div
+      className="gcard"
+      data-side={side}
+      ref={cardRef}
+      onMouseEnter={() => decideSide()}
+    >
       <div className="gcard-main">
         <img className="gcard-concept" src={conceptSrc} alt="" />
         <div className="gcard-body">
@@ -42,9 +63,9 @@ export default function GroupCard({ group }) {
       </div>
 
       <div
-        className="gc-previews gc-tight"
+        className="gc-previews gc-12cols gc-tight"
+        data-side={side}
         style={{
-          "--cols": mergedLayout.cols || 12,
           "--panel-w": mergedLayout.panelWidth || "640px",
           "--row-h": mergedLayout.rowHeight || "160px",
         }}
