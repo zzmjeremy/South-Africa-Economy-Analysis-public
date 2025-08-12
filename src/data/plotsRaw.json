@@ -68,8 +68,7 @@
       "description": "NAICS complexity and density for Alberta (Provincial level).",
       "files": [
         "National/Products_Distribution/twoDigit_Product_Counts.png",
-        "National/Products_Distribution/twoDigit_Product_Proportion.png",
-        "National/Products_Distribution/Product_Counts.png"
+        "National/Products_Distribution/twoDigit_Product_Proportion.png"
       ]
     }
   ],
@@ -83,7 +82,7 @@
       ]
     },
     {
-      "name": "FTE Distributio",
+      "name": "FTE Distribution",
       "description": "NAICS complexity and density .",
       "files": [
         "eThekwini/FTE_Distribution/FTE_Change.png",
@@ -129,9 +128,13 @@
         "eThekwini/Change_Year/GrowthVS-zDensity.html",
         "eThekwini/Change_Year/Employment_growth_vs._PCI.html",
         "eThekwini/Change_Year/Employment growth_vs._ECI.html",
-        "eThekwini/Change_Year/Income_per_FTE_vs_ECI_2024.html",
-        "eThekwini/Change_Year/Correlation_vs._ECI.png"
+        "eThekwini/Change_Year/Income_per_FTE_vs_ECI_2024.html"
       ]
+    },
+    {
+      "name": "S Curve",
+      "description": "NAICS complexity and density .",
+      "file": "eThekwini/S_Curve/Correlation_vs._ECI.png"
     }
   ]
 }

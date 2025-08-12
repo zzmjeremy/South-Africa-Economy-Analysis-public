@@ -1,12 +1,16 @@
 import { useMemo } from "react";
 import { computePlacements } from "../utils/layout.js";
 import PreviewCard from "./PreviewCard.jsx";
+import { LAYOUT_OVERRIDES } from "../config/layoutOverrides.js";
 
 export default function GroupCard({ group }) {
+  const key = group.id;
+  const ovr = LAYOUT_OVERRIDES[key] || {};
+  const mergedLayout = { ...(group.layout || {}), ...ovr };
+
   const placements = useMemo(
-    () =>
-      computePlacements(group.previews, group.layout, group.id || group.title),
-    [group]
+    () => computePlacements(group.previews, mergedLayout, key),
+    [group, key]
   );
 
   return (
@@ -29,8 +33,8 @@ export default function GroupCard({ group }) {
       <div
         className="gc-previews gc-12cols gc-tight"
         style={{
-          "--panel-w": group.layout?.panelWidth || "640px",
-          "--row-h": group.layout?.rowHeight || "160px",
+          "--panel-w": mergedLayout.panelWidth || "640px",
+          "--row-h": mergedLayout.rowHeight || "160px",
         }}
       >
         {group.previews.map((p, i) => (

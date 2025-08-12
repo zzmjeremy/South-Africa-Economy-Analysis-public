@@ -38,7 +38,8 @@ const tagsFrom = (files) => {
   return out.length ? out : ["Mixed"];
 };
 
-const toPreview = (f) => ({
+const toPreview = (f, i) => ({
+  idx: i,
   file: f,
   thumb: thumbFor(f),
   type: /\.html?$/i.test(f) ? "html" : "image",
@@ -46,8 +47,9 @@ const toPreview = (f) => ({
 
 const raw = JSON.parse(fs.readFileSync(RAW_PATH, "utf8"));
 
-let natIdx = 1,
-  ethIdx = 1;
+let natIdx = 1;
+let ethIdx = 1;
+
 const national = (raw.national || []).map((g) => ({
   id: `nat-${natIdx++}`,
   title: g.name,

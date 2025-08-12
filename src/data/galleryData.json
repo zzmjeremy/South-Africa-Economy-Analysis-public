@@ -10,30 +10,37 @@
       "conceptImg": "/concepts/fte_distribution.png",
       "previews": [
         {
+          "idx": 0,
           "file": "National/FTE_Distribution/FTE_Change.png",
           "type": "image"
         },
         {
+          "idx": 1,
           "file": "National/FTE_Distribution/Municipalities_by_FTE_Distribution.png",
           "type": "image"
         },
         {
+          "idx": 2,
           "file": "National/FTE_Distribution/FTE_Boxplot_Municipalities.png",
           "type": "image"
         },
         {
+          "idx": 3,
           "file": "National/FTE_Distribution/Industries_by_FTE_Distribution.png",
           "type": "image"
         },
         {
+          "idx": 4,
           "file": "National/FTE_Distribution/FTE_Boxplot_Industries.png",
           "type": "image"
         },
         {
+          "idx": 5,
           "file": "National/FTE_Distribution/FTE_Municipalities.png",
           "type": "image"
         },
         {
+          "idx": 6,
           "file": "National/FTE_Distribution/FTE_Industries.png",
           "type": "image"
         }
@@ -49,10 +56,12 @@
       "conceptImg": "/concepts/industry_complexity_income_distribution.png",
       "previews": [
         {
+          "idx": 0,
           "file": "National/Complexity_Income_Distribution/PCI_Industry.png",
           "type": "image"
         },
         {
+          "idx": 1,
           "file": "National/Complexity_Income_Distribution/Income_Industry.png",
           "type": "image"
         }
@@ -68,41 +77,49 @@
       "conceptImg": "/concepts/industry_change_over_time.png",
       "previews": [
         {
+          "idx": 0,
           "file": "National/Industry_Change/NationalFTE_Change.html",
           "thumb": "/thumbs/NationalFTE_Change.png",
           "type": "html"
         },
         {
+          "idx": 1,
           "file": "National/Industry_Change/NationalFTE_Change_Percent.html",
           "thumb": "/thumbs/NationalFTE_Change_Percent.png",
           "type": "html"
         },
         {
+          "idx": 2,
           "file": "National/Industry_Change/Muni_HighECI_FTE_Change.html",
           "thumb": "/thumbs/Muni_HighECI_FTE_Change.png",
           "type": "html"
         },
         {
+          "idx": 3,
           "file": "National/Industry_Change/Muni_HighECI_FTE_Change_Percent.html",
           "thumb": "/thumbs/Muni_HighECI_FTE_Change_Percent.png",
           "type": "html"
         },
         {
+          "idx": 4,
           "file": "National/Industry_Change/Muni_MidECI_FTE_Change.html",
           "thumb": "/thumbs/Muni_MidECI_FTE_Change.png",
           "type": "html"
         },
         {
+          "idx": 5,
           "file": "National/Industry_Change/Muni_MidECI_FTE_Change_Percent.html",
           "thumb": "/thumbs/Muni_MidECI_FTE_Change_Percent.png",
           "type": "html"
         },
         {
+          "idx": 6,
           "file": "National/Industry_Change/Muni_LowECI_FTE_Change.html",
           "thumb": "/thumbs/Muni_LowECI_FTE_Change.png",
           "type": "html"
         },
         {
+          "idx": 7,
           "file": "National/Industry_Change/Muni_LowECI_FTE_Change_Percent.html",
           "thumb": "/thumbs/Muni_LowECI_FTE_Change_Percent.png",
           "type": "html"
@@ -119,41 +136,49 @@
       "conceptImg": "/concepts/complexity_vs_density.png",
       "previews": [
         {
+          "idx": 0,
           "file": "National/Complexity_vs._Density/PCI_vs_Unnormalized_Density_interactive.html",
           "thumb": "/thumbs/PCI_vs_Unnormalized_Density_interactive.png",
           "type": "html"
         },
         {
+          "idx": 1,
           "file": "National/Complexity_vs._Density/PCI_vs_SH_WD_interactive.html",
           "thumb": "/thumbs/PCI_vs_SH_WD_interactive.png",
           "type": "html"
         },
         {
+          "idx": 2,
           "file": "National/Complexity_vs._Density/FTE_High_ECI_PCI_vs_Density_interactive.html",
           "thumb": "/thumbs/FTE_High_ECI_PCI_vs_Density_interactive.png",
           "type": "html"
         },
         {
+          "idx": 3,
           "file": "National/Complexity_vs._Density/FTE_Mid_ECI_PCI_vs_Density_interactive.html",
           "thumb": "/thumbs/FTE_Mid_ECI_PCI_vs_Density_interactive.png",
           "type": "html"
         },
         {
+          "idx": 4,
           "file": "National/Complexity_vs._Density/FTE_Low_ECI_PCI_vs_Density_interactive.html",
           "thumb": "/thumbs/FTE_Low_ECI_PCI_vs_Density_interactive.png",
           "type": "html"
         },
         {
+          "idx": 5,
           "file": "National/Complexity_vs._Density/FTE_High_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.html",
           "thumb": "/thumbs/FTE_High_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.png",
           "type": "html"
         },
         {
+          "idx": 6,
           "file": "National/Complexity_vs._Density/FTE_Mid_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.html",
           "thumb": "/thumbs/FTE_Mid_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.png",
           "type": "html"
         },
         {
+          "idx": 7,
           "file": "National/Complexity_vs._Density/FTE_Low_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.html",
           "thumb": "/thumbs/FTE_Low_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.png",
           "type": "html"
@@ -170,14 +195,17 @@
       "conceptImg": "/concepts/s_curve.png",
       "previews": [
         {
+          "idx": 0,
           "file": "National/S_Curve/ECI_vs_Correlation.png",
           "type": "image"
         },
         {
+          "idx": 1,
           "file": "National/S_Curve/S_Curve_Cities_11years.png",
           "type": "image"
         },
         {
+          "idx": 2,
           "file": "National/S_Curve/S_Curve_Provinces_11years_Province.png",
           "type": "image"
         }
@@ -193,6 +221,7 @@
       "conceptImg": "/concepts/eci_distribution.png",
       "previews": [
         {
+          "idx": 0,
           "file": "National/ECI_Distribution/Muni_ECI_Distribution.png",
           "type": "image"
         }
@@ -208,15 +237,13 @@
       "conceptImg": "/concepts/products_distribution.png",
       "previews": [
         {
+          "idx": 0,
           "file": "National/Products_Distribution/twoDigit_Product_Counts.png",
           "type": "image"
         },
         {
+          "idx": 1,
           "file": "National/Products_Distribution/twoDigit_Product_Proportion.png",
-          "type": "image"
-        },
-        {
-          "file": "National/Products_Distribution/Product_Counts.png",
           "type": "image"
         }
       ]
@@ -233,11 +260,13 @@
       "conceptImg": "/concepts/complexity_vs_d.png",
       "previews": [
         {
+          "idx": 0,
           "file": "eThekwini/Complexity_vs._Density/FTE_ETH_PCI_vs_Density_interactive.html",
           "thumb": "/thumbs/FTE_ETH_PCI_vs_Density_interactive.png",
           "type": "html"
         },
         {
+          "idx": 1,
           "file": "eThekwini/Complexity_vs._Density/FTE_ETH_PCI_vs_Scaled_Hidalgo_Density_interactive.html",
           "thumb": "/thumbs/FTE_ETH_PCI_vs_Scaled_Hidalgo_Density_interactive.png",
           "type": "html"
@@ -246,27 +275,31 @@
     },
     {
       "id": "eth-2",
-      "title": "FTE Distributio",
+      "title": "FTE Distribution",
       "desc": "NAICS complexity and density .",
       "tags": [
         "Map",
         "Image"
       ],
-      "conceptImg": "/concepts/fte_distributio.png",
+      "conceptImg": "/concepts/fte_distribution.png",
       "previews": [
         {
+          "idx": 0,
           "file": "eThekwini/FTE_Distribution/FTE_Change.png",
           "type": "image"
         },
         {
+          "idx": 1,
           "file": "eThekwini/FTE_Distribution/FTE_Hex7.png",
           "type": "image"
         },
         {
+          "idx": 2,
           "file": "eThekwini/FTE_Distribution/ECI_Distribution.png",
           "type": "image"
         },
         {
+          "idx": 3,
           "file": "eThekwini/FTE_Distribution/FTE_Industries.png",
           "type": "image"
         }
@@ -283,11 +316,13 @@
       "conceptImg": "/concepts/eci_hexbin_map.png",
       "previews": [
         {
+          "idx": 0,
           "file": "eThekwini/Hexbin_Map/ECI/Hex_EThekwini_ECI_byValue_All.html",
           "thumb": "/thumbs/Hex_EThekwini_ECI_byValue_All.png",
           "type": "html"
         },
         {
+          "idx": 1,
           "file": "eThekwini/Hexbin_Map/ECI/Hex_EThekwini_ECI_byPercentage_All.html",
           "thumb": "/thumbs/Hex_EThekwini_ECI_byPercentage_All.png",
           "type": "html"
@@ -305,11 +340,13 @@
       "conceptImg": "/concepts/income_hexbin_map.png",
       "previews": [
         {
+          "idx": 0,
           "file": "eThekwini/Hexbin_Map/Income/Hex_EThekwini_MedianIncome_byValue.html",
           "thumb": "/thumbs/Hex_EThekwini_MedianIncome_byValue.png",
           "type": "html"
         },
         {
+          "idx": 1,
           "file": "eThekwini/Hexbin_Map/Income/Hex_EThekwini_MedianIncome_byPercentage.html",
           "thumb": "/thumbs/Hex_EThekwini_MedianIncome_byPercentage.png",
           "type": "html"
@@ -327,11 +364,13 @@
       "conceptImg": "/concepts/gini_hexbin_map.png",
       "previews": [
         {
+          "idx": 0,
           "file": "eThekwini/Hexbin_Map/Gini/Hex_EThekwini_Gini_byValue.html",
           "thumb": "/thumbs/Hex_EThekwini_Gini_byValue.png",
           "type": "html"
         },
         {
+          "idx": 1,
           "file": "eThekwini/Hexbin_Map/Gini/Hex_EThekwini_Gini_byPercentage.html",
           "thumb": "/thumbs/Hex_EThekwini_Gini_byPercentage.png",
           "type": "html"
@@ -349,6 +388,7 @@
       "conceptImg": "/concepts/combined_hexbin_map.png",
       "previews": [
         {
+          "idx": 0,
           "file": "eThekwini/Hexbin_Map/Hex_EThekwini_Combined.png",
           "type": "image"
         }
@@ -360,38 +400,54 @@
       "desc": "NAICS complexity and density .",
       "tags": [
         "Line",
-        "Interactive",
-        "Image"
+        "Interactive"
       ],
       "conceptImg": "/concepts/change_with_year_growth.png",
       "previews": [
         {
+          "idx": 0,
           "file": "eThekwini/Change_Year/GrowthVS-density.html",
           "thumb": "/thumbs/GrowthVS-density.png",
           "type": "html"
         },
         {
+          "idx": 1,
           "file": "eThekwini/Change_Year/GrowthVS-zDensity.html",
           "thumb": "/thumbs/GrowthVS-zDensity.png",
           "type": "html"
         },
         {
+          "idx": 2,
           "file": "eThekwini/Change_Year/Employment_growth_vs._PCI.html",
           "thumb": "/thumbs/Employment_growth_vs._PCI.png",
           "type": "html"
         },
         {
+          "idx": 3,
           "file": "eThekwini/Change_Year/Employment growth_vs._ECI.html",
           "thumb": "/thumbs/Employment growth_vs._ECI.png",
           "type": "html"
         },
         {
+          "idx": 4,
           "file": "eThekwini/Change_Year/Income_per_FTE_vs_ECI_2024.html",
           "thumb": "/thumbs/Income_per_FTE_vs_ECI_2024.png",
           "type": "html"
-        },
+        }
+      ]
+    },
+    {
+      "id": "eth-8",
+      "title": "S Curve",
+      "desc": "NAICS complexity and density .",
+      "tags": [
+        "Image"
+      ],
+      "conceptImg": "/concepts/s_curve.png",
+      "previews": [
         {
-          "file": "eThekwini/Change_Year/Correlation_vs._ECI.png",
+          "idx": 0,
+          "file": "eThekwini/S_Curve/Correlation_vs._ECI.png",
           "type": "image"
         }
       ]

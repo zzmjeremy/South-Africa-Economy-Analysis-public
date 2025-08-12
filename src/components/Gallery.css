@@ -13,15 +13,40 @@
 .gcard-tags .gc-tag { display:inline-block; background:#eff6ff; color:#215bb3; border:1px solid #d6e6ff; border-radius:8px; padding:2px 8px; margin-right:6px; font-size:12px; }
 
 .gcard:hover .gc-previews { opacity:1; transform:translateX(0); pointer-events:auto; }
-.gc-previews{
-  position:absolute; top:14px; right:-8px; transform:translateX(18px);
-  opacity:0; pointer-events:none; transition:all .25s ease; z-index:30;
+
+.gc-previews {
+  position: absolute;
+  top: 14px;
+  right: -8px;
+  transform: translateX(18px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all .25s ease;
+  z-index: 30;
 
   width: var(--panel-w, 640px);
-  height:auto; max-height:560px; overflow:hidden;
+  max-height: 560px;
 
-  display:grid; gap:14px; grid-auto-rows: var(--row-h, 160px);
+  display: grid;
+  gap: 14px;
+  grid-auto-rows: var(--row-h, 160px);
+
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  -webkit-overflow-scrolling: touch;
 }
+
+.gc-previews::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.gc-previews:hover::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
 .gc-previews.gc-12cols { grid-template-columns:repeat(12, 1fr); }
 
 .pv-card{
