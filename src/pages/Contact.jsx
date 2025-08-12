@@ -16,10 +16,10 @@ function Contact() {
           </div>
 
           <div>
-            <strong>Rohan Sharma</strong>
-            <span>MASc in Engineering</span>
+            <strong>Zhuomin Zhu</strong>
+            <span>MEng in Engineering</span>
             <span>The University of British Columbia, Canada</span>
-            <a href="mailto:rohan.s@ubc.ca">rohan.s@ubc.ca</a>
+            <a href="mailto:zzm2024@ubc.ca">zzm2024@ubc.ca</a>
           </div>
         </div>
       </div>

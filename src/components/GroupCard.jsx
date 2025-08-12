@@ -13,10 +13,21 @@ export default function GroupCard({ group }) {
     [group, key]
   );
 
+  const idx =
+    Array.isArray(mergedLayout.rows) &&
+    mergedLayout.rows.length > 0 &&
+    Array.isArray(mergedLayout.rows[0]) &&
+    mergedLayout.rows[0].length > 0
+      ? mergedLayout.rows[0][0]
+      : 0;
+
+  const first = group.previews[idx] || group.previews[0];
+  const conceptSrc = first ? first.thumb || `/plots/${first.file}` : "";
+
   return (
     <div className="gcard">
       <div className="gcard-main">
-        <img className="gcard-concept" src={group.conceptImg} alt="" />
+        <img className="gcard-concept" src={conceptSrc} alt="" />
         <div className="gcard-body">
           <h3 className="gcard-title">{group.title}</h3>
           <p className="gcard-desc">{group.desc}</p>
@@ -31,8 +42,9 @@ export default function GroupCard({ group }) {
       </div>
 
       <div
-        className="gc-previews gc-12cols gc-tight"
+        className="gc-previews gc-tight"
         style={{
+          "--cols": mergedLayout.cols || 12,
           "--panel-w": mergedLayout.panelWidth || "640px",
           "--row-h": mergedLayout.rowHeight || "160px",
         }}

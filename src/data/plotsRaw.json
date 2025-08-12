@@ -2,7 +2,7 @@
   "national": [
     {
       "name": "FTE Distribution",
-      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "description": "Full-time Equivalent Analysis for South Africa Municipalies and Industries",
       "files": [
         "National/FTE_Distribution/FTE_Change.png",
         "National/FTE_Distribution/Municipalities_by_FTE_Distribution.png",
@@ -14,16 +14,16 @@
       ]
     },
     {
-      "name": "Industry Complexity & Income Distribution",
-      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "name": "Industry Boxplots",
+      "description": "Income / Product Complexity for Different Industries",
       "files": [
         "National/Complexity_Income_Distribution/PCI_Industry.png",
         "National/Complexity_Income_Distribution/Income_Industry.png"
       ]
     },
     {
-      "name": "Industry Change Over Time",
-      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "name": "Industry Growth",
+      "description": "Industry Growth for National and Different ECI Groups",
       "files": [
         "National/Industry_Change/NationalFTE_Change.html",
         "National/Industry_Change/NationalFTE_Change_Percent.html",
@@ -36,8 +36,8 @@
       ]
     },
     {
-      "name": "Complexity vs. Density",
-      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "name": "Industry Analysis (Detailed)",
+      "description": "5-digit Level Industry Complexity (National and Different ECI Groups)",
       "files": [
         "National/Complexity_vs._Density/PCI_vs_Unnormalized_Density_interactive.html",
         "National/Complexity_vs._Density/PCI_vs_SH_WD_interactive.html",
@@ -51,7 +51,7 @@
     },
     {
       "name": "S Curve",
-      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "description": "S Curve for Municipality Development (2014 - 2024)",
       "files": [
         "National/S_Curve/ECI_vs_Correlation.png",
         "National/S_Curve/S_Curve_Cities_11years.png",
@@ -59,13 +59,13 @@
       ]
     },
     {
-      "name": "ECI Distribution",
-      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "name": "ECI Inequality",
+      "description": "Economy Complexity Index Inequality for Municipalities",
       "file": "National/ECI_Distribution/Muni_ECI_Distribution.png"
     },
     {
-      "name": "Products Distribution",
-      "description": "NAICS complexity and density for Alberta (Provincial level).",
+      "name": "Product Distribution",
+      "description": "Count of Products in HS Groups",
       "files": [
         "National/Products_Distribution/twoDigit_Product_Counts.png",
         "National/Products_Distribution/twoDigit_Product_Proportion.png"
@@ -74,16 +74,8 @@
   ],
   "eth": [
     {
-      "name": "Complexity vs. d",
-      "description": "NAICS complexity and density .",
-      "files": [
-        "eThekwini/Complexity_vs._Density/FTE_ETH_PCI_vs_Density_interactive.html",
-        "eThekwini/Complexity_vs._Density/FTE_ETH_PCI_vs_Scaled_Hidalgo_Density_interactive.html"
-      ]
-    },
-    {
       "name": "FTE Distribution",
-      "description": "NAICS complexity and density .",
+      "description": "Full-time Equivalent Analysis for eThekwini Hexagons and Industries",
       "files": [
         "eThekwini/FTE_Distribution/FTE_Change.png",
         "eThekwini/FTE_Distribution/FTE_Hex7.png",
@@ -92,48 +84,46 @@
       ]
     },
     {
-      "name": "ECI Hexbin Map",
-      "description": "NAICS complexity and density .",
+      "name": "FTE Analysis",
+      "description": "Employment and Income Growth by PCI / ECI",
       "files": [
-        "eThekwini/Hexbin_Map/ECI/Hex_EThekwini_ECI_byValue_All.html",
-        "eThekwini/Hexbin_Map/ECI/Hex_EThekwini_ECI_byPercentage_All.html"
-      ]
-    },
-    {
-      "name": "Income Hexbin Map",
-      "description": "NAICS complexity and density .",
-      "files": [
-        "eThekwini/Hexbin_Map/Income/Hex_EThekwini_MedianIncome_byValue.html",
-        "eThekwini/Hexbin_Map/Income/Hex_EThekwini_MedianIncome_byPercentage.html"
-      ]
-    },
-    {
-      "name": "Gini Hexbin Map",
-      "description": "NAICS complexity and density .",
-      "files": [
-        "eThekwini/Hexbin_Map/Gini/Hex_EThekwini_Gini_byValue.html",
-        "eThekwini/Hexbin_Map/Gini/Hex_EThekwini_Gini_byPercentage.html"
-      ]
-    },
-    {
-      "name": "Combined Hexbin Map",
-      "description": "NAICS complexity and density .",
-      "file": "eThekwini/Hexbin_Map/Hex_EThekwini_Combined.png"
-    },
-    {
-      "name": "Change With Year Growth",
-      "description": "NAICS complexity and density .",
-      "files": [
-        "eThekwini/Change_Year/GrowthVS-density.html",
-        "eThekwini/Change_Year/GrowthVS-zDensity.html",
         "eThekwini/Change_Year/Employment_growth_vs._PCI.html",
         "eThekwini/Change_Year/Employment growth_vs._ECI.html",
         "eThekwini/Change_Year/Income_per_FTE_vs_ECI_2024.html"
       ]
     },
     {
+      "name": "Industry Growth Analysis",
+      "description": "Analysis Relationship between Density and Industry Growth",
+      "files": [
+        "eThekwini/Change_Year/GrowthVS-density.html",
+        "eThekwini/Change_Year/GrowthVS-zDensity.html"
+      ]
+    },
+    {
+      "name": "Industry Analysis (Detailed)",
+      "description": "4-digit Level Industry Complexity for eThekwini",
+      "files": [
+        "eThekwini/Complexity_vs._Density/FTE_ETH_PCI_vs_Density_interactive.html",
+        "eThekwini/Complexity_vs._Density/FTE_ETH_PCI_vs_Scaled_Hidalgo_Density_interactive.html"
+      ]
+    },
+    {
+      "name": "Hexbin Map",
+      "description": "Hexagon Inequalies in ECI / Income / Gini Coefficient",
+      "files": [
+        "eThekwini/Hexbin_Map/Hex_EThekwini_ECI_byValue_All.html",
+        "eThekwini/Hexbin_Map/Hex_EThekwini_ECI_byPercentage_All.html",
+        "eThekwini/Hexbin_Map/Hex_EThekwini_MedianIncome_byValue.html",
+        "eThekwini/Hexbin_Map/Hex_EThekwini_MedianIncome_byPercentage.html",
+        "eThekwini/Hexbin_Map/Hex_EThekwini_Gini_byValue.html",
+        "eThekwini/Hexbin_Map/Hex_EThekwini_Gini_byPercentage.html",
+        "eThekwini/Hexbin_Map/Hex_EThekwini_Combined.png"
+      ]
+    },
+    {
       "name": "S Curve",
-      "description": "NAICS complexity and density .",
+      "description": "S Curve for Hexagon Development in eThekwini (2014 - 2024)",
       "file": "eThekwini/S_Curve/Correlation_vs._ECI.png"
     }
   ]
