@@ -17,36 +17,36 @@
       "name": "Industry Boxplots",
       "description": "Income / Product Complexity for Different Industries",
       "files": [
-        "National/Complexity_Income_Distribution/PCI_Industry.png",
-        "National/Complexity_Income_Distribution/Income_Industry.png"
+        "National/Industry_Boxplots/PCI_Industry.png",
+        "National/Industry_Boxplots/Income_Industry.png"
       ]
     },
     {
       "name": "Industry Growth",
       "description": "Industry Growth for National and Different ECI Groups",
       "files": [
-        "National/Industry_Change/NationalFTE_Change.html",
-        "National/Industry_Change/NationalFTE_Change_Percent.html",
-        "National/Industry_Change/Muni_HighECI_FTE_Change.html",
-        "National/Industry_Change/Muni_HighECI_FTE_Change_Percent.html",
-        "National/Industry_Change/Muni_MidECI_FTE_Change.html",
-        "National/Industry_Change/Muni_MidECI_FTE_Change_Percent.html",
-        "National/Industry_Change/Muni_LowECI_FTE_Change.html",
-        "National/Industry_Change/Muni_LowECI_FTE_Change_Percent.html"
+        "National/Industry_Growth/NationalFTE_Change.html",
+        "National/Industry_Growth/NationalFTE_Change_Percent.html",
+        "National/Industry_Growth/Muni_HighECI_FTE_Change.html",
+        "National/Industry_Growth/Muni_HighECI_FTE_Change_Percent.html",
+        "National/Industry_Growth/Muni_MidECI_FTE_Change.html",
+        "National/Industry_Growth/Muni_MidECI_FTE_Change_Percent.html",
+        "National/Industry_Growth/Muni_LowECI_FTE_Change.html",
+        "National/Industry_Growth/Muni_LowECI_FTE_Change_Percent.html"
       ]
     },
     {
       "name": "Industry Analysis (Detailed)",
       "description": "5-digit Level Industry Complexity (National and Different ECI Groups)",
       "files": [
-        "National/Complexity_vs._Density/PCI_vs_Unnormalized_Density_interactive.html",
-        "National/Complexity_vs._Density/PCI_vs_SH_WD_interactive.html",
-        "National/Complexity_vs._Density/FTE_High_ECI_PCI_vs_Density_interactive.html",
-        "National/Complexity_vs._Density/FTE_Mid_ECI_PCI_vs_Density_interactive.html",
-        "National/Complexity_vs._Density/FTE_Low_ECI_PCI_vs_Density_interactive.html",
-        "National/Complexity_vs._Density/FTE_High_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.html",
-        "National/Complexity_vs._Density/FTE_Mid_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.html",
-        "National/Complexity_vs._Density/FTE_Low_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.html"
+        "National/Industry_Analysis_Detailed/PCI_vs_Unnormalized_Density.html",
+        "National/Industry_Analysis_Detailed/PCI_vs_SH_WD.html",
+        "National/Industry_Analysis_Detailed/FTE_High_ECI_PCI_vs_Density.html",
+        "National/Industry_Analysis_Detailed/FTE_Mid_ECI_PCI_vs_Density.html",
+        "National/Industry_Analysis_Detailed/FTE_Low_ECI_PCI_vs_Density.html",
+        "National/Industry_Analysis_Detailed/FTE_High_ECI_PCI_vs_Scaled_Hidalgo_WD.html",
+        "National/Industry_Analysis_Detailed/FTE_Mid_ECI_PCI_vs_Scaled_Hidalgo_WD.html",
+        "National/Industry_Analysis_Detailed/FTE_Low_ECI_PCI_vs_Scaled_Hidalgo_WD.html"
       ]
     },
     {
@@ -61,7 +61,7 @@
     {
       "name": "ECI Inequality",
       "description": "Economy Complexity Index Inequality for Municipalities",
-      "file": "National/ECI_Distribution/Muni_ECI_Distribution.png"
+      "file": "National/ECI_Inequality/Muni_ECI_Distribution.png"
     },
     {
       "name": "Product Distribution",
@@ -87,25 +87,25 @@
       "name": "FTE Analysis",
       "description": "Employment and Income Growth by PCI / ECI",
       "files": [
-        "eThekwini/Change_Year/Employment_growth_vs._PCI.html",
-        "eThekwini/Change_Year/Employment growth_vs._ECI.html",
-        "eThekwini/Change_Year/Income_per_FTE_vs_ECI_2024.html"
+        "eThekwini/FTE_Analysis/Employment_growth_vs._PCI.html",
+        "eThekwini/FTE_Analysis/Employment growth_vs._ECI.html",
+        "eThekwini/FTE_Analysis/Income_per_FTE_vs_ECI_2024.html"
       ]
     },
     {
       "name": "Industry Growth Analysis",
       "description": "Analysis Relationship between Density and Industry Growth",
       "files": [
-        "eThekwini/Change_Year/GrowthVS-density.html",
-        "eThekwini/Change_Year/GrowthVS-zDensity.html"
+        "eThekwini/Industry_Growth_Analysis/GrowthVS-density.html",
+        "eThekwini/Industry_Growth_Analysis/GrowthVS-zDensity.html"
       ]
     },
     {
       "name": "Industry Analysis (Detailed)",
       "description": "4-digit Level Industry Complexity for eThekwini",
       "files": [
-        "eThekwini/Complexity_vs._Density/FTE_ETH_PCI_vs_Density_interactive.html",
-        "eThekwini/Complexity_vs._Density/FTE_ETH_PCI_vs_Scaled_Hidalgo_Density_interactive.html"
+        "eThekwini/Industry_Analysis_Detailed/PCI_vs_Density.html",
+        "eThekwini/Complexity_vs._Density/PCI_vs_Scaled_Hidalgo_Density.html"
       ]
     },
     {

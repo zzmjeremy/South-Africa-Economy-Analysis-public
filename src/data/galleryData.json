@@ -57,12 +57,12 @@
       "previews": [
         {
           "idx": 0,
-          "file": "National/Complexity_Income_Distribution/PCI_Industry.png",
+          "file": "National/Industry_Boxplots/PCI_Industry.png",
           "type": "image"
         },
         {
           "idx": 1,
-          "file": "National/Complexity_Income_Distribution/Income_Industry.png",
+          "file": "National/Industry_Boxplots/Income_Industry.png",
           "type": "image"
         }
       ]
@@ -72,55 +72,56 @@
       "title": "Industry Growth",
       "desc": "Industry Growth for National and Different ECI Groups",
       "tags": [
+        "Line",
         "Interactive"
       ],
       "conceptImg": "/concepts/industry_growth.png",
       "previews": [
         {
           "idx": 0,
-          "file": "National/Industry_Change/NationalFTE_Change.html",
+          "file": "National/Industry_Growth/NationalFTE_Change.html",
           "thumb": "/thumbs/NationalFTE_Change.png",
           "type": "html"
         },
         {
           "idx": 1,
-          "file": "National/Industry_Change/NationalFTE_Change_Percent.html",
+          "file": "National/Industry_Growth/NationalFTE_Change_Percent.html",
           "thumb": "/thumbs/NationalFTE_Change_Percent.png",
           "type": "html"
         },
         {
           "idx": 2,
-          "file": "National/Industry_Change/Muni_HighECI_FTE_Change.html",
+          "file": "National/Industry_Growth/Muni_HighECI_FTE_Change.html",
           "thumb": "/thumbs/Muni_HighECI_FTE_Change.png",
           "type": "html"
         },
         {
           "idx": 3,
-          "file": "National/Industry_Change/Muni_HighECI_FTE_Change_Percent.html",
+          "file": "National/Industry_Growth/Muni_HighECI_FTE_Change_Percent.html",
           "thumb": "/thumbs/Muni_HighECI_FTE_Change_Percent.png",
           "type": "html"
         },
         {
           "idx": 4,
-          "file": "National/Industry_Change/Muni_MidECI_FTE_Change.html",
+          "file": "National/Industry_Growth/Muni_MidECI_FTE_Change.html",
           "thumb": "/thumbs/Muni_MidECI_FTE_Change.png",
           "type": "html"
         },
         {
           "idx": 5,
-          "file": "National/Industry_Change/Muni_MidECI_FTE_Change_Percent.html",
+          "file": "National/Industry_Growth/Muni_MidECI_FTE_Change_Percent.html",
           "thumb": "/thumbs/Muni_MidECI_FTE_Change_Percent.png",
           "type": "html"
         },
         {
           "idx": 6,
-          "file": "National/Industry_Change/Muni_LowECI_FTE_Change.html",
+          "file": "National/Industry_Growth/Muni_LowECI_FTE_Change.html",
           "thumb": "/thumbs/Muni_LowECI_FTE_Change.png",
           "type": "html"
         },
         {
           "idx": 7,
-          "file": "National/Industry_Change/Muni_LowECI_FTE_Change_Percent.html",
+          "file": "National/Industry_Growth/Muni_LowECI_FTE_Change_Percent.html",
           "thumb": "/thumbs/Muni_LowECI_FTE_Change_Percent.png",
           "type": "html"
         }
@@ -137,50 +138,50 @@
       "previews": [
         {
           "idx": 0,
-          "file": "National/Complexity_vs._Density/PCI_vs_Unnormalized_Density_interactive.html",
-          "thumb": "/thumbs/PCI_vs_Unnormalized_Density_interactive.png",
+          "file": "National/Industry_Analysis_Detailed/PCI_vs_Unnormalized_Density.html",
+          "thumb": "/thumbs/PCI_vs_Unnormalized_Density.png",
           "type": "html"
         },
         {
           "idx": 1,
-          "file": "National/Complexity_vs._Density/PCI_vs_SH_WD_interactive.html",
-          "thumb": "/thumbs/PCI_vs_SH_WD_interactive.png",
+          "file": "National/Industry_Analysis_Detailed/PCI_vs_SH_WD.html",
+          "thumb": "/thumbs/PCI_vs_SH_WD.png",
           "type": "html"
         },
         {
           "idx": 2,
-          "file": "National/Complexity_vs._Density/FTE_High_ECI_PCI_vs_Density_interactive.html",
-          "thumb": "/thumbs/FTE_High_ECI_PCI_vs_Density_interactive.png",
+          "file": "National/Industry_Analysis_Detailed/FTE_High_ECI_PCI_vs_Density.html",
+          "thumb": "/thumbs/FTE_High_ECI_PCI_vs_Density.png",
           "type": "html"
         },
         {
           "idx": 3,
-          "file": "National/Complexity_vs._Density/FTE_Mid_ECI_PCI_vs_Density_interactive.html",
-          "thumb": "/thumbs/FTE_Mid_ECI_PCI_vs_Density_interactive.png",
+          "file": "National/Industry_Analysis_Detailed/FTE_Mid_ECI_PCI_vs_Density.html",
+          "thumb": "/thumbs/FTE_Mid_ECI_PCI_vs_Density.png",
           "type": "html"
         },
         {
           "idx": 4,
-          "file": "National/Complexity_vs._Density/FTE_Low_ECI_PCI_vs_Density_interactive.html",
-          "thumb": "/thumbs/FTE_Low_ECI_PCI_vs_Density_interactive.png",
+          "file": "National/Industry_Analysis_Detailed/FTE_Low_ECI_PCI_vs_Density.html",
+          "thumb": "/thumbs/FTE_Low_ECI_PCI_vs_Density.png",
           "type": "html"
         },
         {
           "idx": 5,
-          "file": "National/Complexity_vs._Density/FTE_High_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.html",
-          "thumb": "/thumbs/FTE_High_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.png",
+          "file": "National/Industry_Analysis_Detailed/FTE_High_ECI_PCI_vs_Scaled_Hidalgo_WD.html",
+          "thumb": "/thumbs/FTE_High_ECI_PCI_vs_Scaled_Hidalgo_WD.png",
           "type": "html"
         },
         {
           "idx": 6,
-          "file": "National/Complexity_vs._Density/FTE_Mid_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.html",
-          "thumb": "/thumbs/FTE_Mid_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.png",
+          "file": "National/Industry_Analysis_Detailed/FTE_Mid_ECI_PCI_vs_Scaled_Hidalgo_WD.html",
+          "thumb": "/thumbs/FTE_Mid_ECI_PCI_vs_Scaled_Hidalgo_WD.png",
           "type": "html"
         },
         {
           "idx": 7,
-          "file": "National/Complexity_vs._Density/FTE_Low_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.html",
-          "thumb": "/thumbs/FTE_Low_ECI_PCI_vs_Scaled_Hidalgo_WD_interactive.png",
+          "file": "National/Industry_Analysis_Detailed/FTE_Low_ECI_PCI_vs_Scaled_Hidalgo_WD.html",
+          "thumb": "/thumbs/FTE_Low_ECI_PCI_vs_Scaled_Hidalgo_WD.png",
           "type": "html"
         }
       ]
@@ -222,7 +223,7 @@
       "previews": [
         {
           "idx": 0,
-          "file": "National/ECI_Distribution/Muni_ECI_Distribution.png",
+          "file": "National/ECI_Inequality/Muni_ECI_Distribution.png",
           "type": "image"
         }
       ]
@@ -294,19 +295,19 @@
       "previews": [
         {
           "idx": 0,
-          "file": "eThekwini/Change_Year/Employment_growth_vs._PCI.html",
+          "file": "eThekwini/FTE_Analysis/Employment_growth_vs._PCI.html",
           "thumb": "/thumbs/Employment_growth_vs._PCI.png",
           "type": "html"
         },
         {
           "idx": 1,
-          "file": "eThekwini/Change_Year/Employment growth_vs._ECI.html",
+          "file": "eThekwini/FTE_Analysis/Employment growth_vs._ECI.html",
           "thumb": "/thumbs/Employment growth_vs._ECI.png",
           "type": "html"
         },
         {
           "idx": 2,
-          "file": "eThekwini/Change_Year/Income_per_FTE_vs_ECI_2024.html",
+          "file": "eThekwini/FTE_Analysis/Income_per_FTE_vs_ECI_2024.html",
           "thumb": "/thumbs/Income_per_FTE_vs_ECI_2024.png",
           "type": "html"
         }
@@ -324,13 +325,13 @@
       "previews": [
         {
           "idx": 0,
-          "file": "eThekwini/Change_Year/GrowthVS-density.html",
+          "file": "eThekwini/Industry_Growth_Analysis/GrowthVS-density.html",
           "thumb": "/thumbs/GrowthVS-density.png",
           "type": "html"
         },
         {
           "idx": 1,
-          "file": "eThekwini/Change_Year/GrowthVS-zDensity.html",
+          "file": "eThekwini/Industry_Growth_Analysis/GrowthVS-zDensity.html",
           "thumb": "/thumbs/GrowthVS-zDensity.png",
           "type": "html"
         }
@@ -347,14 +348,14 @@
       "previews": [
         {
           "idx": 0,
-          "file": "eThekwini/Complexity_vs._Density/FTE_ETH_PCI_vs_Density_interactive.html",
-          "thumb": "/thumbs/FTE_ETH_PCI_vs_Density_interactive.png",
+          "file": "eThekwini/Industry_Analysis_Detailed/PCI_vs_Density.html",
+          "thumb": "/thumbs/PCI_vs_Density.png",
           "type": "html"
         },
         {
           "idx": 1,
-          "file": "eThekwini/Complexity_vs._Density/FTE_ETH_PCI_vs_Scaled_Hidalgo_Density_interactive.html",
-          "thumb": "/thumbs/FTE_ETH_PCI_vs_Scaled_Hidalgo_Density_interactive.png",
+          "file": "eThekwini/Complexity_vs._Density/PCI_vs_Scaled_Hidalgo_Density.html",
+          "thumb": "/thumbs/PCI_vs_Scaled_Hidalgo_Density.png",
           "type": "html"
         }
       ]
