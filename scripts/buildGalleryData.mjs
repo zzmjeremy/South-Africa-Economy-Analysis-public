@@ -24,20 +24,6 @@ const slug = (s) =>
     .replace(/[^a-z0-9]+/g, "_")
     .replace(/^_|_$/g, "");
 
-const tagsFrom = (files) => {
-  const arr = Array.isArray(files) ? files : [files];
-  const hasHtml = arr.some((f) => /\.html?$/i.test(f));
-  const hasPng = arr.some((f) => /\.png$/i.test(f));
-  const isMap = arr.some((f) => /hex|map|choropleth|geo/i.test(f));
-  const isLine = arr.some((f) => /line|growth/i.test(f));
-  const out = [];
-  if (isMap) out.push("Map");
-  if (isLine) out.push("Line");
-  if (hasHtml) out.push("Interactive");
-  if (hasPng) out.push("Image");
-  return out.length ? out : ["Mixed"];
-};
-
 const toPreview = (f, i) => ({
   idx: i,
   file: f,
@@ -54,7 +40,7 @@ const national = (raw.national || []).map((g) => ({
   id: `nat-${natIdx++}`,
   title: g.name,
   desc: g.description || "",
-  tags: tagsFrom(g.files ?? g.file),
+  tags: Array.isArray(g.tags) ? g.tags : [], 
   conceptImg: `/concepts/${slug(g.name)}.png`,
   previews: (g.files ? g.files : [g.file]).map(toPreview),
 }));
@@ -63,7 +49,7 @@ const ethekwini = (raw.eth || []).map((g) => ({
   id: `eth-${ethIdx++}`,
   title: g.name,
   desc: g.description || "",
-  tags: tagsFrom(g.files ?? g.file),
+  tags: Array.isArray(g.tags) ? g.tags : [], 
   conceptImg: `/concepts/${slug(g.name)}.png`,
   previews: (g.files ? g.files : [g.file]).map(toPreview),
 }));

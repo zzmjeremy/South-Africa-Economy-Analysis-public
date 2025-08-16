@@ -3,6 +3,7 @@
     {
       "name": "FTE Distribution",
       "description": "Full-time Equivalent Analysis for South Africa Municipalies and Industries",
+      "tags": ["Bar", "Boxplot"],
       "files": [
         "National/FTE_Distribution/FTE_Change.png",
         "National/FTE_Distribution/Municipalities_by_FTE_Distribution.png",
@@ -16,6 +17,7 @@
     {
       "name": "Industry Boxplots",
       "description": "Income / Product Complexity for Different Industries",
+      "tags": ["Boxplot"],
       "files": [
         "National/Industry_Boxplots/PCI_Industry.png",
         "National/Industry_Boxplots/Income_Industry.png"
@@ -24,6 +26,7 @@
     {
       "name": "Industry Growth",
       "description": "Industry Growth for National and Different ECI Groups",
+      "tags": ["Line", "Interactive"],
       "files": [
         "National/Industry_Growth/NationalFTE_Change.html",
         "National/Industry_Growth/NationalFTE_Change_Percent.html",
@@ -38,6 +41,7 @@
     {
       "name": "Industry Analysis (Detailed)",
       "description": "5-digit Level Industry Complexity (National and Different ECI Groups)",
+      "tags": ["Scatter", "Interactive"],
       "files": [
         "National/Industry_Analysis_Detailed/PCI_vs_Unnormalized_Density.html",
         "National/Industry_Analysis_Detailed/PCI_vs_SH_WD.html",
@@ -52,6 +56,7 @@
     {
       "name": "S Curve",
       "description": "S Curve for Municipality Development (2014 - 2024)",
+      "tags": ["Scatter"],
       "files": [
         "National/S_Curve/ECI_vs_Correlation.png",
         "National/S_Curve/S_Curve_Cities_11years.png",
@@ -61,11 +66,13 @@
     {
       "name": "ECI Inequality",
       "description": "Economy Complexity Index Inequality for Municipalities",
+      "tags": ["Map"],
       "file": "National/ECI_Inequality/Muni_ECI_Distribution.png"
     },
     {
       "name": "Product Distribution",
       "description": "Count of Products in HS Groups",
+      "tags": ["Bar"],
       "files": [
         "National/Products_Distribution/twoDigit_Product_Counts.png",
         "National/Products_Distribution/twoDigit_Product_Proportion.png"
@@ -76,6 +83,7 @@
     {
       "name": "FTE Distribution",
       "description": "Full-time Equivalent Analysis for eThekwini Hexagons and Industries",
+      "tags": ["Bar"],
       "files": [
         "eThekwini/FTE_Distribution/FTE_Change.png",
         "eThekwini/FTE_Distribution/FTE_Hex7.png",
@@ -86,6 +94,7 @@
     {
       "name": "FTE Analysis",
       "description": "Employment and Income Growth by PCI / ECI",
+      "tags": ["Scatter", "Interactive"],
       "files": [
         "eThekwini/FTE_Analysis/Employment_growth_vs._PCI.html",
         "eThekwini/FTE_Analysis/Employment growth_vs._ECI.html",
@@ -95,6 +104,7 @@
     {
       "name": "Industry Growth Analysis",
       "description": "Analysis Relationship between Density and Industry Growth",
+      "tags": ["Bar", "Boxplot", "Interactive"],
       "files": [
         "eThekwini/Industry_Growth_Analysis/GrowthVS-density.html",
         "eThekwini/Industry_Growth_Analysis/GrowthVS-zDensity.html"
@@ -103,6 +113,7 @@
     {
       "name": "Industry Analysis (Detailed)",
       "description": "4-digit Level Industry Complexity for eThekwini",
+      "tags": ["Scatter", "Interactive"],
       "files": [
         "eThekwini/Industry_Analysis_Detailed/PCI_vs_Density.html",
         "eThekwini/Complexity_vs._Density/PCI_vs_Scaled_Hidalgo_Density.html"
@@ -111,6 +122,7 @@
     {
       "name": "Hexbin Map",
       "description": "Hexagon Inequalies in ECI / Income / Gini Coefficient",
+      "tags": ["Map", "Interactive"],
       "files": [
         "eThekwini/Hexbin_Map/Hex_EThekwini_ECI_byValue_All.html",
         "eThekwini/Hexbin_Map/Hex_EThekwini_ECI_byPercentage_All.html",
@@ -124,6 +136,7 @@
     {
       "name": "S Curve",
       "description": "S Curve for Hexagon Development in eThekwini (2014 - 2024)",
+      "tags": ["Scatter"],
       "file": "eThekwini/S_Curve/Correlation_vs._ECI.png"
     }
   ]
