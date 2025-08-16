@@ -1,6 +1,40 @@
 # UBC South Africa Economy Analysis (USE)
 
+Deployed at: [https://ubc-sa-economy-analysis.netlify.app/](https://ubc-sa-economy-analysis.netlify.app/)
+
 This project provides interactive visualizations and data analysis for South Africa, with a focus on the eThekwini metro. The platform is built with React and supports modular galleries of plots grouped into cards and tabs.
+
+## Deployment and Updates
+
+After making code changes, rebuild the project and push to both repositories:
+
+```bash
+# build for production
+npm run build
+
+# push changes to organization repo
+git push origin main
+
+# push changes to public mirror repo
+git push mirror main
+```
+
+### Remote Setup
+
+Make sure you have two remotes configured:
+
+```bash
+# check remotes
+git remote -v
+
+# set the organization repo
+git remote set-url origin https://github.com/WoutersResearchGroup/South-Africa-Economy-Analysis.git
+
+# add a public mirror repo
+git remote add mirror https://github.com/zzmjeremy/South-Africa-Economy-Analysis-public.git
+```
+
+Netlify is connected to the **public mirror repository**, so any push there will automatically trigger a new deployment.
 
 ## Getting Started
 
