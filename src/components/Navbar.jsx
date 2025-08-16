@@ -15,7 +15,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-inner">
         <span className="navbar-logo">
-          <span className="navbar-logo-highlight">RIX</span>
+          <span className="navbar-logo-highlight">USE</span>
         </span>
         <div className="navbar-links">
           {navLinks.map((link) => (

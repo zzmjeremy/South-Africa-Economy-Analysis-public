@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-title">
-          <strong>RIX</strong> — Regional Industry Explorer
+          <strong>USE</strong> — UBC South Africa Economy Analysis
         </div>
         <nav className="footer-nav">
           <a href="#">Privacy Policy</a>
@@ -14,9 +14,7 @@ function Footer() {
           <a href="#">Contact</a>
           <a href="#">Help</a>
         </nav>
-        <div className="footer-copy">
-          &copy; {new Date().getFullYear()} RIX. All rights reserved.
-        </div>
+        <div className="footer-copy">USE. All rights reserved.</div>
       </div>
     </footer>
   );

@@ -4,17 +4,26 @@ function Home() {
   return (
     <div className="home-container">
       <div className="home-content">
-        <h1>RIX – Regional Industry Explorer</h1>
+        <h1>USE – UBC South Africa Economy Analysis</h1>
         <p>
-          Discover how regional industries align with workforce skills across
-          Canadian provinces and cities. Navigate rich visualizations designed
-          to inform economic development and workforce planning.
+          Explore how South Africa’s national and local economies align with
+          workforce capabilities, with a spotlight on eThekwini.
         </p>
         <h2>What You Can Do Here</h2>
         <ul>
-          <li>Explore industry and skill fit at provincial and city levels</li>
-          <li>Visualize employment and workforce capability trends</li>
-          <li>Support data-driven decision-making for regional growth</li>
+          <li>
+            Examine South Africa’s industry–skill fit and highlight
+            opportunities for inclusive growth.
+          </li>
+          <li>
+            Explore eThekwini’s industrial composition and its alignment with
+            workforce capacity.
+          </li>
+          <li>
+            Support data-driven decisions for economic planning, investment, and
+            development.
+          </li>
+          <li>Visualize employment and capability trends across sectors.</li>
         </ul>
         <p>
           To learn more about our mission and team, visit the{" "}
